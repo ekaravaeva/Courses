@@ -1,0 +1,77 @@
+1) Посмотреть где я
+pwd
+/c/Data/_texts
+
+2) Создать папку
+mkdir a_test
+
+3) Зайти в папку
+cd a_test
+
+4) Создать 3 папки
+mkdir in_dir in_dirr in_dirrr
+
+5) Зайти в любую папку
+cd in_dir
+
+6) Создать 5 файлов (3 txt, 2 json)
+touch text_1.txt text_2.txt text_3.txt j_1.json j_2.json
+
+7) Создать 3 папки
+mkdir p_1 p_2 p_3
+
+8) Вывести список содержимого папки
+ls
+
+9) + Открыть любой txt файл
+vim text_1.txt
+
+10) + написать туда что-нибудь, любой текст
+i
+To seek a good job and build a career in any industry, candidates need to crack the interview and HR round in which they are asked for various interview questions.
+
+We have compiled a list of commonly asked HR round interview questions and answers that an interviewer might ask you during any job interview. Candidates applying for the job from fresher level to advance level job are likely to be asked these HR round interview questions depending on their experience and various other factors.
+
+Following are most commonly asked questions during an HR interview round for freshers as well as experienced job seeking candidates. This HR round interview questions guide will help you crack the interview and help you get your dream job.
+
+11) + сохранить и выйти
+Escape
+:wq
+
+12) Выйти из папки на уровень выше
+cd ..
+—
+13) переместить любые 2 файла, которые вы создали, в любую другую папку
+mv in_dir/text_1.txt in_dir/j_1.json in_dir/p_1
+
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку
+cp in_dir/text_2.txt in_dir/j_2.json in_dir/p_2
+
+15) Найти файл по имени
+find . -name "text_1.txt"
+
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает
+tail -f in_dir/p_1/text_1.txt | grep error
+
+17) вывести несколько первых строк из текстового файла
+head -n 2 in_dir/p_1/text_1.txt
+
+18) вывести несколько последних строк из текстового файла
+tail -n 2 in_dir/p_1/text_1.txt
+
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает
+less in_dir/p_1/text_1.txt
+
+20) вывести дату и время
+date
+
+
+Задание *
+1) Отправить http запрос на сервер.
+http://162.55.220.72:5005/terminal-hw-request
+
+curl "http://162.55.220.72:5005/object_info_3?name=Vadim&age=32&salary=1000"
+
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+
+Скрипт DZ1.sh на гитхабе.
