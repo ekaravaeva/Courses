@@ -22,6 +22,7 @@ mkdir p_1 p_2 p_3
 
 8) Вывести список содержимого папки
 ls
+(j_2.json  p_1/  p_2/  p_3/  text_2.txt  text_3.txt)
 
 9) + Открыть любой txt файл
 vim text_1.txt
