@@ -1,59 +1,248 @@
 TXT
  1. Создать внешний репозиторий c названием TXT. 
- 2. Клонировать репозиторий TXT на локальный компьютер. (git clone https://github.com/ekaravaeva/TXT.git)
- 3. Внутри локального TXT создать файл “new.txt”. (cd TXT && > new.txt)
- 4. Добавить файл под гит. (git add .)
- 5. Закоммитить файл. (git commit -m "create new.txt")
- 6. Отправить файл на внешний GitHub репозиторий. (git push)
- 7. Отредактировать содержание файла “new.txt” - написать информацию о себе. (vim new.txt)
- 8. Отправить изменения на внешний репозиторий. (git commit -am "edit new.txt")
- 9. Создать файл preferences.txt (> preferences.txt)
- 10. В файл preferences.txt” добавить информацию о своих предпочтениях в формате TXT. (vim preferences.txt)
- 11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT (> skills.txt)
- 12. Сделать коммит в одну строку. (git add . &&  git commit -m "edit preferences skills")
- 13. Отправить сразу 2 файла на внешний репозиторий. (git push)
+	(https://github.com/ekaravaeva?tab=repositories)
+	-> New 
+	-> Repository name = TXT 
+	-> Create repository
+ 2. Клонировать репозиторий TXT на локальный компьютер. 
+	(git clone https://github.com/ekaravaeva/TXT.git)
+ 3. Внутри локального TXT создать файл “new.txt”. 
+	(cd TXT && > new.txt)
+ 4. Добавить файл под гит. 
+	(git add .)
+ 5. Закоммитить файл. 
+	(git commit -m "create new.txt")
+ 6. Отправить файл на внешний GitHub репозиторий. 
+	(git push)
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе. 
+	(vim new.txt) 
+	i
+	(Name: Karavaeva Ekaterina Anatolyevna
+	Age: NULL
+	Pets: 0
+	Salary: $450)
+	(Escape)
+	(:wq)
+ 8. Отправить изменения на внешний репозиторий. 
+	(git commit -am "edit new.txt")
+ 9. Создать файл preferences.txt 
+	(> preferences.txt)
+ 10. В файл preferences.txt” добавить информацию о своих предпочтениях в формате TXT. 
+	(vim preferences.txt)
+	i
+	(Film: Interstellar
+	TV series: Top of the lake
+	Food: pizza
+	Season: autumn
+	Country: Portugal)
+	(Escape)
+	(:wq)
+ 11. Создать файл skills.txt, добавить информацию о скиллах которые будут изучены на курсе в формате TXT 
+	(> skills.txt)
+	(vim skills.txt)
+	i
+	(Composing test cases and bug reports
+	Basic Linux commands usage
+	API testing (Postman)
+	Studying logs on remote server
+	GitHub experience
+	SQL (creating tables, composing queries)
+	Working with browser Devtools
+	JMeter load testing
+	Mobile testing)
+	(Escape)
+	(:wq)
+ 12. Сделать коммит в одну строку. 
+	(git add . &&  git commit -m "edit preferences skills")
+ 13. Отправить сразу 2 файла на внешний репозиторий. 
+	(git push)
  14. На веб интерфейсе создать файл bug_report.txt.
- 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+	(https://github.com/ekaravaeva/TXT)
+	-> Add file
+	-> Create new file
+	-> TXT / bug_report.txt	
+15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+	Commit directly to the main branch
+	-> Commit new file
  16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
+	(https://github.com/ekaravaeva/TXT/edit/main/bug_report.txt)
+	-> Edit this file
  17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
- 18. Синхронизировать внешний и локальный репозиторий TXT (git pull)
+	Commit directly to the main branch
+	-> Commit changes
+ 18. Синхронизировать внешний и локальный репозиторий TXT 
+	(git pull)
 
 JSON
- 1. Создать внешний репозиторий c названием JSON. 
- 2. Клонировать репозиторий JSON на локальный компьютер. (git clone https://github.com/ekaravaeva/JSON.git)
- 3. Внутри локального JSON создать файл “new.json”. (cd JSON && > new.json)
- 4. Добавить файл под гит. (git add .)
- 5. Закоммитить файл. (git commit -m "create new.json")
- 6. Отправить файл на внешний GitHub репозиторий. (git push)
- 7. Отредактировать содержание файла “new.json” - написать информацию о себе. (vim new.json)
- 8. Отправить изменения на внешний репозиторий. (git commit -am "edit new.json")
- 9. Создать файл preferences.json (> preferences.json)
- 10. В файл preferences.json добавить информацию о своих предпочтениях. (vim preferences.json)
- 11. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON. (> skills.json)
- 12. Сделать коммит в одну строку. (git add . &&  git commit -m "edit preferences skills")
- 13. Отправить сразу 2 файла на внешний репозиторий. (git push)
+ 1. Создать внешний репозиторий c названием JSON.
+	(https://github.com/ekaravaeva?tab=repositories)
+	-> New 
+	-> Repository name = JSON 
+	-> Create repository
+ 2. Клонировать репозиторий JSON на локальный компьютер. 
+	(git clone https://github.com/ekaravaeva/JSON.git)
+ 3. Внутри локального JSON создать файл “new.json”. 
+	(cd JSON && > new.json)
+ 4. Добавить файл под гит. 
+	(git add .)
+ 5. Закоммитить файл. 
+	(git commit -m "create new.json")
+ 6. Отправить файл на внешний GitHub репозиторий. 
+	(git push)
+ 7. Отредактировать содержание файла “new.json” - написать информацию о себе. 
+	(vim new.json)
+	i
+	{"Name": "Karavaeva Ekaterina Anatolyevna",
+	"Age": null,
+	"Pets": 0,
+	"Salary": {"Amount": 450,
+		"Currency": "usd"}}
+	(Escape)
+	(:wq)	
+ 8. Отправить изменения на внешний репозиторий. 
+	(git commit -am "edit new.json")
+ 9. Создать файл preferences.json 
+	(> preferences.json)
+ 10. В файл preferences.json добавить информацию о своих предпочтениях. 
+	(vim preferences.json)
+	i
+	{"Film": "Interstellar",
+	"TV_series": "Top of the lake",
+	"Food": "pizza",
+	"Season": "autumn",
+	"Country": "Portugal"}
+	(Escape)
+	(:wq)	
+ 11. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON. 
+	(> skills.json)
+	i
+	{"skills": ["Composing test cases and bug reports",
+	"Basic Linux commands usage",
+	"API testing (Postman)",
+	"Studying logs on remote server",
+	"GitHub experience",
+	"SQL (creating tables, composing queries)",
+	"Working with browser Devtools",
+	"JMeter load testing",
+	"Mobile testing"]}
+	(Escape)
+	(:wq)
+ 12. Сделать коммит в одну строку. 
+	(git add . &&  git commit -m "edit preferences skills")
+ 13. Отправить сразу 2 файла на внешний репозиторий. 
+	(git push)
  14. На веб интерфейсе создать файл bug_report.json.
+	(https://github.com/ekaravaeva/JSON)
+	-> Add file
+	-> Create new file
+	-> JSON / bug_report.json	
  15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+	Commit directly to the main branch
+	-> Commit new file	
  16. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+	i
+	{"Title": "Ошибка 500 при попытке сохранения изменений в файле bug_report.txt",
+	"Steps": ["Открыть папку Courses",
+		"Открыть файл bug_report.txt",
+		"Внести изменения в файл",
+		"Нажать кнопку Сommit changes"],
+	"ExpectedResult": "Изменения сохранились",
+	"Result": "Ошибка 500 при попытке сохранения изменений"}
+	(Escape)
+	(:wq)
  17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
- 18. Синхронизировать внешний и локальный репозиторий JSON. (git pull)
+	Commit directly to the main branch
+	-> Commit changes
+ 18. Синхронизировать внешний и локальный репозиторий JSON. 
+	(git pull)
  
  XML
  1. Создать внешний репозиторий c названием XML.
- 2. Клонировать репозиторий XML на локальный компьютер. (git clone https://github.com/ekaravaeva/XML.git)
- 3. Внутри локального XML создать файл “new.xml”. (cd XML && > new.xml)
- 4. Добавить файл под гит. (git add .)
- 5. Закоммитить файл. (git commit -m "create new.xml")
- 6. Отправить файл на внешний GitHub репозиторий. (git push)
- 7. Отредактировать содержание файла “new.xml” - написать информацию о себе. (vim new.xml)
- 8. Отправить изменения на внешний репозиторий. (git commit -am "edit new.xml")
- 9. Создать файл preferences.xml (> preferences.xml)
- 10. В файл preferences.xml добавить информацию о своих предпочтениях. (vim preferences.xml)
- 11. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML. (> skills.xml)
- 12. Сделать коммит в одну строку. (git add . &&  git commit -m "edit preferences skills")
- 13. Отправить сразу 2 файла на внешний репозиторий. (git push)
+	(https://github.com/ekaravaeva?tab=repositories)
+	-> New 
+	-> Repository name = XML 
+	-> Create repository
+ 2. Клонировать репозиторий XML на локальный компьютер. 
+	(git clone https://github.com/ekaravaeva/XML.git)
+ 3. Внутри локального XML создать файл “new.xml”. 
+	(cd XML && > new.xml)
+ 4. Добавить файл под гит. 
+	(git add .)
+ 5. Закоммитить файл. 
+	(git commit -m "create new.xml")
+ 6. Отправить файл на внешний GitHub репозиторий. 
+	(git push)
+ 7. Отредактировать содержание файла “new.xml” - написать информацию о себе. 
+	(vim new.xml)
+	i
+	<person>
+	<Name>Karavaeva Ekaterina Anatolyevna</Name>
+	<Age/>
+	<Pets>0</Pets>
+	<Salary>
+		<Amount>450</Amount>
+		<Currency>usd</Currency>
+	</Salary>
+	</person>
+	(Escape)
+	(:wq)
+ 8. Отправить изменения на внешний репозиторий. 
+	(git commit -am "edit new.xml")
+ 9. Создать файл preferences.xml 
+	(> preferences.xml)
+ 10. В файл preferences.xml добавить информацию о своих предпочтениях. 
+	(vim preferences.xml)
+	i
+	<preferences><Film>Interstellar</Film>
+	<TV_series>Top of the lake</TV_series> 
+	<Food>pizza</Food> 
+	<Season>autumn</Season>
+	<Country>Portugal</Country></preferences>
+	(Escape)
+	(:wq)
+ 11. Создать файл sklls.xml и добавить информацию о скиллах которые будут изучены на курсе в формате XML. 
+	(> skills.xml)
+	(vim skills.xml)
+	i 
+	<skills>
+	<skill>Composing test cases and bug reports</skill>
+	<skill>Basic Linux commands usage</skill>
+	<skill>API testing (Postman)</skill>
+	<skill>Studying logs on remote server</skill>
+	<skill>GitHub experience</skill>
+	<skill>SQL (creating tables, composing queries)</skill>
+	<skill>working with browser Devtools</skill>
+	<skill>JMeter load testing</skill>
+	<skill>Mobile testing</skill>
+	</skills>
+	(Escape)
+	(:wq)
+ 12. Сделать коммит в одну строку. 
+	(git add . &&  git commit -m "edit preferences skills")
+ 13. Отправить сразу 2 файла на внешний репозиторий. 
+	(git push)
  14. На веб интерфейсе создать файл bug_report.xml.
+	(https://github.com/ekaravaeva/XML)
+	-> Add file
+	-> Create new file
+	-> XML / bug_report.xml
  15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+	Commit directly to the main branch
+	-> Commit new file
  16. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+	<bug>
+	<title>Ошибка 500 при попытке сохранения изменений в файле bug_report.txt</title>
+	<steps>
+		<step>Открыть папку Courses</step>
+		<step>Открыть файл bug_report.txt</step>
+		<step>Внести изменения в файл</step>
+		<step>Нажать кнопку "Сommit changes"</step>
+	</steps>
+	<expected_result>Изменения сохранились</expected_result>
+	<result>Ошибка 500 при попытке сохранения изменений</result>
+	</bug>
  17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
- 18. Синхронизировать внешний и локальный репозиторий XML. (git pull)
+	Commit directly to the main branch
+	-> Commit changes
+ 18. Синхронизировать внешний и локальный репозиторий XML. 
+	(git pull)
