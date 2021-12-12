@@ -39,6 +39,7 @@ git push -u origin bug_reports
 5. Вмержить ветку Bag Reports в Main
 ```
 git checkout main
+git merge bug_reports
 ```
 
 6. Запушить main на внешний репозиторий.
