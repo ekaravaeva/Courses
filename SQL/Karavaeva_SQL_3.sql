@@ -15,20 +15,10 @@
 
 --3. Вывести все зарплатные позиции, но работник по ним не назначен. (ЗП есть, но не понятно кто её получает.)
 
---первый вариант (выводим никому не назначенные зарплаты)
-
-select s.id, s.monthly_salary, salary_id
+select s.id, s.monthly_salary, es.employee_id
 from salary s
 left join employee_salary es on es.salary_id = s.id 
-where salary_id is null;
-
--- второй вариант (выводим зарплаты, назначенные несуществующим сотрудникам)
-
-select s.id, monthly_salary, employee_name
-from salary s 
-left join employee_salary es on es.salary_id = s.id
-left join employees e on es.employee_id = e.id 
-where employee_name is null;
+where es.employee_id is null;
 
 --4. Вывести все зарплатные позиции  меньше 2000 но работник по ним не назначен. (ЗП есть, но не понятно кто её получает.)
 
