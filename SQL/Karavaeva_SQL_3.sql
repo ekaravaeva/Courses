@@ -22,8 +22,6 @@ from salary s
 left join employee_salary es on es.salary_id = s.id 
 where salary_id is null;
 
-select * from employee_salary;
-
 -- второй вариант (выводим зарплаты, назначенные несуществующим сотрудникам)
 
 select s.id, monthly_salary, employee_name
