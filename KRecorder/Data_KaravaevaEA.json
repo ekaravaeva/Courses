@@ -1,0 +1,28 @@
+[
+	{
+		"field-desired-loan": "100000",
+		"field-initial-payment": "0",
+		"field-credit-term": "12",
+		"second-name": "Ярцова",
+		"first-name": "Злата",
+		"middle-name": "Васильевна",
+		"passport": "4300 542277",
+		"issued-by": "Нижегородское ГОВД",
+		"issued-date": "11.11.2011",
+		"education": "Высшее",
+		"seniority": "5 лет - 10 лет",
+		"term-work-last-place": "Более 3 лет",
+		"confirmation-income-ndfl": "Да",
+		"work-place-bank-area": "Да",
+		"net-income": "35000",
+		"registration-place-bank-area": "Да",
+		"previous-conviction": "Нет",
+		"car": "Да",
+		"real-estate": "Да",		
+		"credit-message": "Кредит предварительно одобрен",
+		"credit-rate": "28.61 %",
+		"credit-monthly-payment-full": "9 680 Р",
+		"credit-credit-overpayment": "16 165 Р",
+		"payments-loan-period": "116 165 Р"
+	}
+]
