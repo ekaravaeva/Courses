@@ -1,0 +1,522 @@
+{
+	"info": {
+		"_postman_id": "d78fa50a-9839-42d6-9e90-39bd54305360",
+		"name": "HW_1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "one",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Protocol: http\r",
+							"// IP: 162.55.220.72\r",
+							"// Port: 5005\r",
+							"\r",
+							"// Method: GET\r",
+							"// EndPoint: /get_method\r",
+							"// request url params: \r",
+							"//  name: str\r",
+							"//  age: int\r",
+							"\r",
+							"// response: \r",
+							"// [\r",
+							"//     “Str”,\r",
+							"//     “Str”\r",
+							"// ]\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name:",
+							"value": "str",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "age:",
+							"value": "int",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "salary:",
+							"value": "int",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}?name=Kate&age=35",
+					"host": [
+						"{{url}}"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Kate"
+						},
+						{
+							"key": "age",
+							"value": "35"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "two",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Method: POST\r",
+							"// EndPoint: /user_info_3\r",
+							"// request form data: \r",
+							"//  name: str\r",
+							"//  age: int\r",
+							"//  salary: int\r",
+							"\r",
+							"// response: \r",
+							"// {'name': name,\r",
+							"//           'age': age,\r",
+							"//           'salary': salary,\r",
+							"//           'family': {'children': [['Alex', 24], ['Kate', 12]],\r",
+							"//                      'u_salary_1_5_year': salary * 4}}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Ivan",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "60000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/user_info_3",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"user_info_3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "three",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Method: GET\r",
+							"// EndPoint: /object_info_1\r",
+							"// request url params: \r",
+							"//  name: str\r",
+							"//  age: int\r",
+							"//  weight: int\r",
+							"\r",
+							"// response: \r",
+							"// {'name': name,\r",
+							"//           'age': age,\r",
+							"//           'daily_food': weight * 0.012,\r",
+							"//           'daily_sleep': weight * 2.5}\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "age",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "weight",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/object_info_1?name=Charlie&age=5&weight=8",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"object_info_1"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Charlie"
+						},
+						{
+							"key": "age",
+							"value": "5"
+						},
+						{
+							"key": "weight",
+							"value": "8"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "four",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Method: GET\r",
+							"// EndPoint: /object_info_2\r",
+							"// request url params: \r",
+							"//  name: str\r",
+							"//  age: int\r",
+							"//  salary: int\r",
+							"\r",
+							"// response: \r",
+							"// {'start_qa_salary': salary,\r",
+							"//           'qa_salary_after_6_months': salary * 2,\r",
+							"//           'qa_salary_after_12_months': salary * 2.7,\r",
+							"//           'qa_salary_after_1.5_year': salary * 3.3,\r",
+							"//           'qa_salary_after_3.5_years': salary * 3.8,\r",
+							"//           'person': {'u_name': [user_name, salary, age],\r",
+							"//                      'u_age': age,\r",
+							"//                      'u_salary_5_years': salary * 4.2}\r",
+							"//           }\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{url}}/object_info_2?name=Nastya&age=24&salary=40000",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"object_info_2"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Nastya"
+						},
+						{
+							"key": "age",
+							"value": "24"
+						},
+						{
+							"key": "salary",
+							"value": "40000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "five",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Method: GET\r",
+							"// EndPoint: /object_info_3\r",
+							"// request url params: \r",
+							"//  name: str\r",
+							"//  age: int\r",
+							"//  salary: int\r",
+							"\r",
+							"// response: \r",
+							"// {'name': name,\r",
+							"//           'age': age,\r",
+							"//           'salary': salary,\r",
+							"//           'family': {'children': [['Alex', 24], ['Kate', 12]],\r",
+							"//                      'pets': {'cat':{'name':'Sunny',\r",
+							"//                                      'age': 3},\r",
+							"//                               'dog':{'name':'Luky',\r",
+							"//                                      'age': 4}},\r",
+							"//                      'u_salary_1_5_year': salary * 4}\r",
+							"//           }"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/object_info_3?name=Andrew&age=36&salary=52000",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"object_info_3"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Andrew"
+						},
+						{
+							"key": "age",
+							"value": "36"
+						},
+						{
+							"key": "salary",
+							"value": "52000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "six",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Method: GET\r",
+							"// EndPoint: /object_info_4\r",
+							"// request url params: \r",
+							"//  name: str\r",
+							"//  age: int\r",
+							"//  salary: int\r",
+							"\r",
+							"// response: \r",
+							"// {'name': name,\r",
+							"//           'age': int(age),\r",
+							"//           'salary': [salary, str(salary * 2), str(salary * 3)]}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/object_info_4?name=Maria&age=32&salary=43000",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"object_info_4"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Maria"
+						},
+						{
+							"key": "age",
+							"value": "32"
+						},
+						{
+							"key": "salary",
+							"value": "43000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "seven",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Method: POST\r",
+							"// EndPoint: /user_info_2\r",
+							"// request form data: \r",
+							"//  name: str\r",
+							"//  age: int\r",
+							"//  salary: int\r",
+							"\r",
+							"// response: \r",
+							"// {'start_qa_salary': salary,\r",
+							"//           'qa_salary_after_6_months': salary * 2,\r",
+							"//           'qa_salary_after_12_months': salary * 2.7,\r",
+							"//           'qa_salary_after_1.5_year': salary * 3.3,\r",
+							"//           'qa_salary_after_3.5_years': salary * 3.8,\r",
+							"//           'person': {'u_name': [user_name, salary, age],\r",
+							"//                      'u_age': age,\r",
+							"//                      'u_salary_5_years': salary * 4.2}\r",
+							"//           }"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Natali",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "37",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "65000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/user_info_2",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"user_info_2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"const responseJson = pm.response.json();\r",
+							"const resp_token = responseJson.token;\r",
+							"console.log(\"TOKEN =\" +resp_token);\r",
+							"pm.environment.set(\"token\", resp_token);\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "login",
+							"value": "Kate",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "fgytr4fh",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/login",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"login"
+					],
+					"query": [
+						{
+							"key": "salary",
+							"value": "43000",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
